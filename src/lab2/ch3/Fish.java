@@ -3,6 +3,10 @@ package lab2.ch3;
 public class Fish extends Animal implements Pet {
     private String name;
 
+    protected Fish(int legs) {
+        super(legs);
+    }
+
     @Override
     public String getName() {
         return name;
@@ -13,6 +17,7 @@ public class Fish extends Animal implements Pet {
         this.name = name;
     }
 
+
     @Override
     public void play() {
         System.out.println("Play like a fish");
@@ -20,12 +25,12 @@ public class Fish extends Animal implements Pet {
 
     @Override
     public void walk() {
-        super.walk;
+        super.walk();
         System.out.println(" like a fish.");
     }
     @Override
     public void eat() {
-        super.walk;
+        super.eat();
         System.out.println(" eat a fish.");
     }
 }

@@ -10,6 +10,12 @@ public class Cat extends Animal implements Pet {
     public Cat() {
         super(4);
     }
+
+    @Override
+    public String getName() {
+        return null;
+    }
+
     @Override
     public void setName(String name) {
         this.name=name;
