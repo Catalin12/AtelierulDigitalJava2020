@@ -12,7 +12,7 @@ public class Main {
         }catch(ShoesDontMatch e) {
             try {
                 pair = new Pair(r1, r2);
-            } catch(ShoesDontMatch e) {
+            } catch(ShoesDontMatch e2) {
                 System.out.println("don't match");
             }
 

@@ -1,6 +1,6 @@
 package lab5.ch2;
 
-interface Shoe {
+public interface Shoe {
     String getColor();
     int getSize();
 }
