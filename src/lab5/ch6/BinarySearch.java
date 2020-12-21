@@ -11,19 +11,30 @@ public class BinarySearch<T extends Comparable<T>>  {
         this.arr = arr;
     }
     //1, 2, 3, 5, 2, 2, 4, 3,
-    public boolean sorted() {
-        boolean growing = false;
-        boolean descending = false;
-        for(int i=0; i<arr.length-1; i++) {
-            if(arr[i].compareTo(arr[i+1]) < 0) growing=true;
-            else if(arr[i].compareTo(arr[i+1]) > 0) descending=true;
-            if(growing && descending) return false;
+    public boolean sorted() throws CheckException {
+
+        try {
+            boolean growing = false;
+            boolean descending = false;
+            for(int i=0; i<arr.length-1; i++) {
+                if(arr[i].compareTo(arr[i+1]) < 0) growing=true;
+                else if(arr[i].compareTo(arr[i+1]) > 0) descending=true;
+                if(growing && descending) return false;
+            }
+        } catch (Exception e) {
+            CheckException ex = new CheckException("The list isn't sorted!");
+            throw ex;
         }
+
+
+
         return true;
     }
 
 
     public void search(T value) {
+
+
 
         int l = 0, r = arr.length - 1;
         boolean founded = false;
