@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="reactor-core-3.3.0.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.idea/libraries/reactor-core-3.3.0.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

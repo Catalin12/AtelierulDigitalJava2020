@@ -17,5 +17,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="reactor-core-3.3.0.RELEASE" level="project" />
+    <orderEntry type="library" name="io.projectreactor:reactor-core:3.3.0.RELEASE" level="project" />
   </component>
 </module>
